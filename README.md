@@ -1,1 +1,9 @@
-ENIGMA_LlunellAlex_GonzalezDidac
+Aquest projecte implementa una versió simplificada de la màquina enigma a Python. Permet xifrar i desxifrar missatges de text utilitzant tres rotors configurables i una finestra inicial de tres lletres. El programa normalitza el text d’entrada (majúscules, sense accents ni caràcters especials) i treballa només amb lletres de la A a la Z.
+
+Per utilitzar l’aplicació, cal executar el fitxer principal des de la línia de comandes. En iniciar-se, es mostra un menú interactiu on l’usuari pot triar entre xifrar un missatge, desxifrar-ne un altre, editar la configuració dels rotors o sortir del programa. Cada opció guia l’usuari pas a pas amb missatges per pantalla, de manera que no cal editar fitxers manualment.
+
+Quan es xifra un missatge, primer es demana la finestra inicial, formada per tres lletres que estableixen la posició inicial de cadascun dels tres rotors. Després, l’usuari introdueix el text en clar i el programa en genera la versió xifrada, aplicant el moviment dels rotors lletra a lletra. El resultat no es mostra per consola, sinó que es desa automàticament en el fitxer xifrat.txt, normalment agrupat en blocs de cinc lletres per facilitar-ne la lectura.
+
+El procés de desxifrat funciona de manera simètrica: l’usuari ha d’indicar la mateixa finestra inicial que es va utilitzar en el xifrat i, a continuació, introduir el missatge xifrat. El programa recorre les mateixes posicions de rotors en ordre invers i reconstrueix el text original. El resultat en clar s’emmagatzema en el fitxer desxifrat.txt, que es pot obrir amb qualsevol editor de text per consultar el missatge.
+
+A més, el programa permet editar la configuració dels rotors per personalitzar el sistema de xifrat. L’usuari pot seleccionar quin rotor vol modificar i introduir una nova permutació de les 26 lletres, assegurant-se que cada lletra apareix exactament una vegada. També es pot definir la lletra de notch, que determina quan un rotor fa avançar el següent. Aquestes dades es guarden als fitxers corresponents de cada rotor, de manera que les mateixes configuracions es poden reutilitzar en futures execucions.
